@@ -1,6 +1,11 @@
 body {
 	text-align: center;
 	font-family: 'Trebuchet MS', sans-serif;
+	background-image: url("resources/background.gif");
+  background-size: cover;
+  height: 180vh;
+  padding:0;
+  margin:0;
 }
 
 p {
@@ -10,4 +15,22 @@ p {
 
 .header {
 	font-size: 36;
+}
+
+.backBox-inner {
+	background: rgb(190,190,190);
+  width: 93%;
+  padding: 20px;
+	border-radius: 30px;
+	border: white;
+	border-width: 20px;
+}
+
+.backBox-outer {
+	background: linear-gradient(to top right, rgba(119, 133, 138, .9), rgba(143, 155, 161, .9));
+  width: 50%;
+  padding: 50px;
+  margin: 20px;
+	border-radius: 50px;
+	text-align: left;
 }

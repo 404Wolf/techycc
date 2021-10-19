@@ -1,10 +1,9 @@
 #profileImage {
-	align: top;
-	width: 160px;
+	float: right;
+	width: 170px;
 	border-radius: 100%;
 	display:block;
   margin-left: auto;
-  margin-right: auto;
 }
 
 #profileTitle {
@@ -16,23 +15,12 @@
 	list-style: none;
 	font-size: 20px;
 	margin-top: 10px;
-	margin-left: auto;
-}
-
-#aboutMe {
-	background-color: rgb(225, 225, 225);
-  width: 500px;
-  padding: 50px;
-  margin: 20px;
+	margin-right: 50px;
+	background: linear-gradient(to top right, rgba(119, 133, 138, .3), rgba(143, 155, 161, .4));
+	padding: 20px;
 	border-radius: 30px;
-	text-align: left
+	border-width: 20px;
 }
-
-#contacts {
-	background-color: rgb(225, 225, 225);
-  width: 500px;
-  padding: 50px;
-  margin: 20px;
-	border-radius: 30px;
-	text-align: left
+#links > li:hover {
+	background: rgba(109, 123, 128, .3);
 }
