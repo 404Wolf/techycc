@@ -3,24 +3,60 @@
 	<head>
 		<title>techy.cc</title> <!--set title-->
 		<link src="resources/profile.jpg" alt="Profile image"/> <!--set favicon-->
+
+		<!--load css-->
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="elements.css">
 	</head>
 
 	<body>
-		<img src="resources/profile.jpg" alt="Profile image">
+		<!--Profile image-->
 
-		<h1>Wolf</h1>
+		<h1 class="header" id="profileTitle">Wolf</h1>
 
-		<h2>About Me</h2>
-		<p>Heyo, I'm Wolf.<br>I code python, collect minecraft accounts, and run ember sniper. I'm also a student in NYC.<br>Feel free to email or discord me!</p>
+		<!--Create bio about-me-->
+		<center>
+			<div id="aboutMe">
+				<img src="resources/profile.jpg" alt="Profile image" id="profileImage">
+				<h2 class="header">About Me</h2>
+				<p>
+					Heyo, I'm Wolf.
+					I code python, collect minecraft accounts, and run ember sniper.
+					I'm also a student in NYC.
+					Feel free to email or discord me.
+				</p>
+			</div>
 
-		<ul>
-			<li>Discord</li>
-			<li>Github</li>
-			<li>OGUsers</li>
-			<li>Instagram</li>
-		</ul>
-		
-		<h3>Contacts</h3>
+			<div id="contacts">
+				 <!--Set up list of contacts and links-->
+				<h3 class="header">Contacts</h3>
+				<ul id="links">
+					<li>
+						<a alt="Wolf#1452" href="https://discords.com/bio/p/twilak">
+							Discord
+						</a>
+					</li>
+
+					<li>
+						<a alt="/Twilak" href="https://github.com/twilak">
+							Github
+						</a>
+					</li>
+
+					<li>
+						<a alt="/Twilak" href="https://ogusers.com/Twilak">
+							OGUsers
+						</a>
+					</li>
+
+					<li>
+						<a alt="/Twilak_" href="https://www.instagram.com/twilak_/">
+							Instagram
+						</a>
+					</li>
+				</ul>
+			</div>
+		</center>
 
 	</body>
 

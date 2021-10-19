@@ -1,0 +1,38 @@
+#profileImage {
+	align: top;
+	width: 160px;
+	border-radius: 100%;
+	display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#profileTitle {
+	vertical-align: top;
+	text-align: left;
+}
+
+#links > li {
+	list-style: none;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-left: auto;
+}
+
+#aboutMe {
+	background-color: rgb(225, 225, 225);
+  width: 500px;
+  padding: 50px;
+  margin: 20px;
+	border-radius: 30px;
+	text-align: left
+}
+
+#contacts {
+	background-color: rgb(225, 225, 225);
+  width: 500px;
+  padding: 50px;
+  margin: 20px;
+	border-radius: 30px;
+	text-align: left
+}
