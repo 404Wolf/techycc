@@ -10,17 +10,3 @@
 	vertical-align: top;
 	text-align: left;
 }
-
-#links > li {
-	list-style: none;
-	font-size: 20px;
-	margin-top: 10px;
-	margin-right: 50px;
-	background: linear-gradient(to top right, rgba(119, 133, 138, .3), rgba(143, 155, 161, .4));
-	padding: 20px;
-	border-radius: 30px;
-	border-width: 20px;
-}
-#links > li:hover {
-	background: rgba(109, 123, 128, .3);
-}
