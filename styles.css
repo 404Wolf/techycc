@@ -1,6 +1,6 @@
 body {
 	font-family: 'Trebuchet MS', sans-serif;
-	background-color: rgb(55, 55, 100);
+	background-color: rgb(55, 55, 60);
 	color: white;
 }
 
@@ -11,8 +11,12 @@ p {
 }
 
 a {
-	color: rgb(200,200,255);
+	color: rgb(190,190,255);
 	text-decoration: none;
+}
+a:hover {
+	color: rgb(160,160,255);
+	text-decoration: underline;
 }
 
 .link-button {
