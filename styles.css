@@ -45,3 +45,30 @@ a:hover {
 	border-width: 20px;
 	box-shadow: 0px 0px 30px 4px rgba(0, 0, 0, 0.25);
 }
+
+.column {
+    float: left;
+    width: 32.5%;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.column > * {
+    border-radius: 15px;
+}
+
+.project-box {
+    padding: 20px;
+	border-radius: 30px;
+	border: rgb(255,255,255);
+	border-width: 20px;
+    width:90%;
+    background: rgba(150,150,150,0);
+    border: solid 4px rgb(255,255,255);
+    margin:30px
+}
