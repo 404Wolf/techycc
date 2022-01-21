@@ -35,7 +35,7 @@
 	border-width: 20px;
     width:90%;
     border: solid 4px rgb(255,255,255);
-    margin:30px
+    margin-bottom: 30px;
 }
 .project-box:hover {
     transition-duration: .5s;
