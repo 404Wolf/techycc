@@ -9,6 +9,11 @@ h1 {
     font-size:22px
 }
 
+div {
+    text-align: center;
+    margin: 0 auto;
+}
+
 p {
 	color: rgb(220,220,220);
 	font-size: 20;
@@ -22,4 +27,8 @@ a {
 a:hover {
 	color: rgb(160,160,255);
 	text-decoration: underline;
+}
+
+footer {
+    text-align: left;
 }

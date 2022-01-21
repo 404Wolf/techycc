@@ -49,3 +49,15 @@
     margin: 15px;
     border-radius: 14px;
 }
+
+.button {
+    padding: 4px;
+    border-radius: 10px;
+    background: rgba(190,190,255,.15);
+    color: rgb(202, 202, 255);
+}
+.button:hover {
+    transition-duration: .5s;
+    color: rgb(190,190,255);
+    background: rgba(160,160,255,.2);
+}
