@@ -1,0 +1,155 @@
+<html>
+    
+	<head>
+		<title>techy.cc</title>
+		<link rel="shortcut icon" type="image/jpg" href="resources/profile.jpg"/>
+		<link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="elements.css">
+
+		<meta name="title" content="Personal website for Wolf Mermelstein">
+		<meta name="description" content="About me page for Wolf Mermelstein">
+		<meta name="keywords" content="Wolf Mermelstein, Wolf, Techy, Techie, Wolf M">
+		<meta name="robots" content="index, follow">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="language" content="English">
+		<meta name="revisit-after" content="24 days">
+		<meta name="author" content="Wolf Mermelstein">
+	</head>
+
+    
+
+	<body>
+		<h1>
+			<a alt="home" title:"techy.cc" class="header" href="index.html">
+				techy.cc
+			</a>
+		</h1>
+
+        <style>
+            p {
+                text-align: left;
+            }
+        </style>
+
+        <div style="margin: auto">
+            <div class="box" style="width:75%; background:linear-gradient(to top right, rgb(63, 109, 133), rgb(126, 101, 173)); padding:40px">
+                <h1 style="font-size:40px;">
+                    Current Projects
+                </h1>
+                    
+            <div class="project-box" style="min-height: 70%">
+                <a href="https://github.com/hair/LatinBot" style="font-size: 30px;">
+                    Latin Vocab Translator (discord bot)
+                </a>
+                <br>
+                <img src="resources/projects/latinBot.png" class="project-image" style="width: 25%" alt="latin translator bot">
+                <p>
+                    &emsp;&emsp;&emsp;A discord bot which utilises <a href="https://archives.nd.edu/words.html">William Whitaker's Words</a>, a popular latin vocab translator
+                        capable of determining verb conjugations, noun declensions, and more, to translate Latin vocab. To maintain a high level of simplicity and ease of use,
+                        this bot ONLY works via direct messages, and has no prefix or commands. Rather, to use the bot all one must do is direct message it a singular latin or english word.
+                        Feel free to <a href="https://discord.com/api/oauth2/authorize?client_id=933579084443828228&permissions=2112&scope=bot%20applications.commands">invite this bot</a> to a server,
+                        and then message it a vocab words directy to test it out. 
+                </p>
+            </div>
+        
+            <div class="project-box">
+                <a href="https://github.com/hair/bitwardenBackup" style="font-size: 30px;">
+                    Bitwarden HTML Exporter 
+                </a>
+                <br>
+                <img src="resources/projects/bitwardenBackup.gif" class="project-image" style="width: 60%" alt="bitwarden json to html export">
+                <p>
+                    &emsp;&emsp;&emsp;<a href="https://bitwarden.com">Bitwarden</a>, a popular open source and free password manager, does a great job of securely storing passwords and
+                    other personal data in their cloud, well encrypted and easily accessible. However, their option to export your vault (to maintain a local/physical backup) is
+                    to export it as an organized json file, leaving your data in a very human-unfriendly format. While the json format is great for interpreting the data as a machine,
+                    I wanted to make a program to convert it to a more human readable html file, allowing one to print the backup onto physical paper.
+                    In addition, I have integrated automatic favicon/icon fetching, qr code generation (qr codes which contain data about the items in one's bitwarden vault), 
+                    databreach checks (using the <a href="https://haveibeenpwned.com/API/v2">haveibeenpwned.com api</a>) and more.
+                </p>
+            </div>
+        
+            <div class="project-box">
+                <a style="color:rgb(255,255,255); font-size: 30px;">
+                    Google Photo Backup Tool
+                </a>
+                <br>
+                <p>
+                    &emsp;&emsp;&emsp;While still a work in progress, recently I have been working on a tool to automatically back up one's Google Photos library to a hard drive, using the Google Photos API.
+                    Though other tools of the sort exist already, my goal is to make a fully async (with asyncio) tool, to concurrently download many files at once on a single thread — ideal for Raspberry Pis and low end computers. 
+                </p>
+            </div>
+            
+            <div class="project-box" style="min-height: 53%">
+                <a style="color:rgb(255,255,255); font-size: 30px;">
+                    Github Username Turbo
+                </a>
+                <br>
+                <img src="resources/projects/gitswap.png" class="project-image" alt="github username transfer">
+                <p>
+                    &emsp;&emsp;&emsp;A github username transfer bot, to move usernames between github accounts without the risk of them being claimed whilst publically avalible.
+                    The bot is able to auth the github account, verify with an email OTP, and then spam requests to change to the desired username while the user frees up the username.
+                </p>
+            </div>
+
+            <div class="project-box" style="min-height: 65%">
+                <a href="https://github.com/hair/MinecraftAPI" style="font-size: 30px;">
+            NameMc Scraping API
+                </a>
+                <br>
+                <img src="resources/projects/nameMc.png" class="project-image" alt="github username transfer">
+                <p>
+                    &emsp;&emsp;&emsp;In a way a proof of concept, this is a program to scrape the cloudfare protected website, NameMC, a minecraft-social-media site. NameMC uses advanced cloudfare anti-scraping, making it very hard to
+                    pull content from their website. To get the droptime, search count, and other information about given minecraft usernames, however, the use of namemc is vital, as NameMc has cached almost every username, and is able to check to see when people
+                    change their usernames. Additionally, when a 'sniping' (autoclaiming) service 'snipes' a username, generally they send out an informative embed with information about the 'snipe,' including information pulled from NameMc.
+                    While not the first NameMc api, I've created the only open source api for scraping NameMc data. The api uses a bypass which I have found, allowing discord to pull the information instead of a direct request. Discord, a popular chatting platform,
+                    is able to auto-generate embed previews, with information from namemc, regardless of Namemc's harsh cloudfare protection.
+                </p>
+            </div>
+
+            <div class="project-box">
+                <a href="https://solo.to/ember" style="font-size: 30px;">
+                    Minecraft Username Sniping
+                </a>
+                <br>
+                <img src="resources/projects/emberLog.png" class="project-image" style="width: 175px" alt="ember sniper logs">
+                <img src="resources/projects/emberBot.png" class="project-image" style="width: 275px" alt="ember discord bot">
+                <img src="resources/projects/emberAPI.png" class="project-image" style="width: 275px" alt="ember api documentation">
+                <p>
+                    &emsp;&emsp;&emsp;An ongoing project of mine has been developing systems to autoclaim minecraft usernames at the exact milisecond they drop.
+                    When you change your username for Minecraft, the name becomes avalible to the public after 37 days,
+                    a time which is publically known. I have coded a queue system to automatically prepare and auth minecraft accounts on various servers, 
+                    briefly before the droptime of the name, and then automatically send requests to claim the name at the exact time of drop. While many names are 'sniped'
+                    by a plethora of other sniping organizations, I have obtained many decent usernames nonetheless, and have turned the project into a business, selling the
+                    accounts with valued usernames on them. Worth noting that while closed source, I have coded a fully functional async api with aiohttp, documented to openAPI standards, for managing queued names. 
+                </p>
+            </div>
+            
+            <div class="project-box">
+                <a href="https://techy.cc" style="font-size: 30px;">
+                    This website
+                </a>
+                <br>
+                <p>
+                    &emsp;&emsp;&emsp;With the acquisition of <a href="https//www.techy.cc">techy.cc</a> for a personal email, I learned enough html/css to code a basic website to display my contacts and current/past 'techy' projects.
+                </p>
+            </div>
+
+        </div>
+	</body>
+
+    <footer>
+        <h1 style="color:rgb(200,200,200);padding:20;font-size:18px">
+            <a style="float: right" href="https://github.com/hair/TechyCC">
+				Src to site
+			</a>
+			<a rel="noreferrer noopener" target="_blank" alt="github" class="header" href="https://github.com/hair">
+				Github.com/hair
+			</a><br>
+			Have an idea to improve this site?
+			<a href="mailto:Wolf@techy.cc">
+				Email Me
+			</a><br>
+		</h1>
+    </footer>
+
+</html>
