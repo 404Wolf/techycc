@@ -5,8 +5,8 @@ body {
 }
 
 h1 {
-    padding:20;
-    font-size:22px
+    padding: 20;
+    font-size: 25px
 }
 
 div {
@@ -16,7 +16,7 @@ div {
 
 p {
 	color: rgb(220,220,220);
-	font-size: 20;
+	font-size: 22;
 	line-height: 1.5;
 }
 
