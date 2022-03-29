@@ -49,6 +49,10 @@
     margin: 15px;
     border-radius: 14px;
 }
+.project-image:hover {
+    transform: scale(140%);
+    transition-duration: 100ms;
+}
 
 .button {
     padding: 4px;
