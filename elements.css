@@ -82,11 +82,11 @@
 
 .scroll-area {
     overflow: scroll;
-    height: 60px;
+    height: 130px;
     overflow-x: hidden;
-    border-right: 15px rgba(0, 0, 0, 0) solid;
-    border-top: 15px rgba(0, 0, 0, 0) solid;
-    border-bottom: 15px rgba(0, 0, 0, 0) solid;
+    border-right: 30px rgba(0, 0, 0, 0) solid;
+    border-top: 30px rgba(0, 0, 0, 0) solid;
+    border-bottom: 30px rgba(0, 0, 0, 0) solid;
 }
 .scroll-area::-webkit-scrollbar-track
 {
