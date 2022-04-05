@@ -34,41 +34,78 @@
                         </a>
                     </h1>
                 </a>
-                <p>
+                <p style="line-height: 40px">
                     Hey, I'm Wolf. I'm a student in NYC with a passion for coding and figuring things out. Information on current <a class="button" title="Current projects page" alt="Current Projects" href="projects.html">projects</a>, contacts, or my <a rel="noreferrer noopener" target="_blank" class="button" title="Resume PDF" alt="Resume" href="resources/resume.pdf">resume</a> can be on this site.
                     Feel free to <a class="button" title="caffeinate@msn.com" href="mailto:caffeinate@msn.com">email me</a>, and I'll try my best to reply as soon as I can.
                     <br><br>
                 </p>
 
-            <div class="box" style="width:100%; background:rgba(0,0,0,.09); box-shadow:none; padding:2px">
+            <div class="box box-overlay">
                 <h2 style="font-size:30px">
                     Contacts
                 </h2>
                 
                 <a rel="noreferrer noopener" target="_blank" href="https://www.linkedin.com/in/WolfMermelstein" style="margin:2%" class="no-underline-on-hover">
-                    <img src="resources/icons/linkedin.svg" title="/bread" alt="Linkedin Logo" style="width: 45px" class="link-button">
+                    <img src="resources/icons/linkedin.svg" title="/bread" alt="Linkedin Logo" style="width: 55px" class="link-button">
                 </a>
 
                 <a rel="noreferrer noopener" target="_blank" href="https://instagram.com/wolf.mermelstein" style="margin:2%" class="no-underline-on-hover">
-                    <img src="resources/icons/instagram.png" title="/Wolf.Mermelstein" alt="Instagram Logo" class="link-button">
+                    <img src="resources/icons/instagram.png" title="/Wolf.Mermelstein" alt="Instagram Logo" style="width: 66px" class="link-button">
                 </a>
 
                 <a rel="noreferrer noopener" target="_blank" href="https://gitlab.com/bread" style="margin:1%" class="no-underline-on-hover">
-                    <img src="resources/icons/git.svg" title="/bread" alt="gitlab Logo" style="width: 60px" class="link-button">
+                    <img src="resources/icons/git.svg" title="/bread" alt="gitlab Logo" style="width: 70px" class="link-button">
                 </a>
 
                 <a rel="noreferrer noopener" target="_blank" href="https://www.techy.cc" style="margin:2%" class="no-underline-on-hover">
-                    <img src="resources/icons/website.svg" title="www.techy.cc" alt="Website" class="link-button">
+                    <img src="resources/icons/website.svg" title="www.techy.cc" alt="Website" style="width: 66px" class="link-button">
                 </a>
 
                 <a rel="noreferrer noopener" target="_blank" href="https://discords.com/bio/p/twilak" style="margin:2%" class="no-underline-on-hover">
-                    <img src="resources/icons/discord.png" title="@Wolf#1452" alt="Discord Logo" style="width: 45px" class="link-button">
+                    <img src="resources/icons/discord.png" title="@Wolf#1452" alt="Discord Logo" style="width: 55px" class="link-button">
                 </a>
 
-                <p style="color:rgb(200,200,255); text-align: center">
-                    <span style="color:rgb(255,255,255)">Email:</span> <a href="mailto:caffeinate@msn.com">caffeinate@msn.com</a><br>
-                    <span style="color:rgb(255,255,255)">Phone:</span> <a href="tel:+19292657180">(929)265-7180</a>
-                </p>
+                <div style="display: flex; justify-content: center;">
+                    <p style="color:rgb(200,200,255); text-align: left">
+                        <span style="color:rgb(255,255,255)">Email:</span> <a href="mailto:caffeinate@msn.com">caffeinate@msn.com</a><br>
+                        <span style="color:rgb(255,255,255)">Phone:</span> <a href="tel:+19292657180">(929)265-7180</a>
+                    </p>
+                </div>
+            </div>
+
+            <div style="position: static; margin: 40px">
+            </div>
+
+            <script> /* load in sentiments from alternate repo into <p> box*/
+                var txtFile = new XMLHttpRequest();
+                var imported = "file not found";
+                txtFile.onreadystatechange = function () {
+                    if (txtFile.readyState === XMLHttpRequest.DONE && txtFile.status == 200) {
+                        imported = txtFile.responseText;
+                        imported = imported.split("\n");
+                        for (let i = imported.length-1; i >= 0; i--) {
+                            imported[i] = "- " + imported[i]
+                        }
+                        imported = imported.join("<br>");
+                    }
+
+                    document.getElementById('sentiment-box').innerHTML = imported;
+               }
+               txtFile.open("GET", 'https://bread.gitlab.io/dailysentiment/sentiments.txt', true);
+               txtFile.send(null);
+           </script>
+
+            <div class="box box-overlay">
+                <a href="https://gitlab.com/bread/dailysentiment/" style="color:rgb(255,255,255);">
+                    <h2 style="font-size: 30px">
+                        Daily Sentiments
+                    </h2>
+                </a>
+
+                <div class="inner-box">
+                    <p id="sentiment-box" class="scroll-area"> </p>
+                </div>
+                <br>
             </div>
         </div>
 
