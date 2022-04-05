@@ -82,7 +82,7 @@
 
 .scroll-area {
     overflow: scroll;
-    height: 130px;
+    height: 115px;
     overflow-x: hidden;
     border-right: 30px rgba(0, 0, 0, 0) solid;
     border-top: 30px rgba(0, 0, 0, 0) solid;
