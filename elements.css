@@ -98,6 +98,7 @@ but looks like it's pressed into main box*/
 
 /*scroll area + scroll bar formatting*/
 .scroll-area {
+    -webkit-appearance: none;
     overflow: scroll;
     height: 140px;
     overflow-x: hidden;
