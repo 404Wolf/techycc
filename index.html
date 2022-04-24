@@ -63,46 +63,49 @@
 
         </div>
 
-        <div style="margin: 40px"></div>
+        <!--
+            <div style="margin: 40px"></div>
 
-        <div class="box main-box">
-            <script> /* load in sentiments from alternate repo into <p> box*/
-                var txtFile = new XMLHttpRequest();
-                var imported = "file not found";
-                txtFile.onreadystatechange = function () {
-                    if (txtFile.readyState === XMLHttpRequest.DONE && txtFile.status == 200) {
-                        imported = txtFile.responseText;
-                        imported =imported.slice(0, -1).split("\n");
-                        for (let i = imported.length-1; i >= 0; i--) {
-                            imported[i] = "- " + imported[i]
+                <div class="box main-box">
+                    <script> /* load in sentiments from alternate repo into <p> box*/
+                            var txtFile = new XMLHttpRequest();
+                            var imported = "file not found";
+                            txtFile.onreadystatechange = function () {
+                                if (txtFile.readyState === XMLHttpRequest.DONE && txtFile.status == 200) {
+                                    imported = txtFile.responseText;
+                                    imported =imported.slice(0, -1).split("\n");
+                                    for (let i = imported.length-1; i >= 0; i--) {
+                                        imported[i] = "- " + imported[i]
+                                    }
+                                    imported = imported.join("<br>");
+                                }
+
+                                document.getElementById('sentiment-box').innerHTML = imported;
                         }
-                        imported = imported.join("<br>");
-                    }
+                        txtFile.open("GET", 'https://bread.gitlab.io/dailysentiment/sentiments.txt', true);
+                        txtFile.send(null);
+                    </script>
 
-                    document.getElementById('sentiment-box').innerHTML = imported;
-               }
-               txtFile.open("GET", 'https://bread.gitlab.io/dailysentiment/sentiments.txt', true);
-               txtFile.send(null);
-           </script>
+                    <div class="box box-overlay" style="min-height: 300px">
+                        <a rel="noreferrer noopener" target="_blank" href="https://gitlab.com/bread/dailysentiment/" style="color:rgb(255,255,255);">
+                            <h2 style="font-size: 30px">
+                                Daily Sentiments
+                            </h2>
+                        </a>
 
-            <div class="box box-overlay" style="min-height: 300px">
-                <a rel="noreferrer noopener" target="_blank" href="https://gitlab.com/bread/dailysentiment/" style="color:rgb(255,255,255);">
-                    <h2 style="font-size: 30px">
-                        Daily Sentiments
-                    </h2>
-                </a>
+                        <div class="box-underlay">
+                            <p id="sentiment-box" class="scroll-area" style="text-align: left; margin-left: 40px"> </p>
+                        </div>
+                        <br>
+                    </div>
 
-                <div class="box-underlay">
-                    <p id="sentiment-box" class="scroll-area" style="text-align: left; margin-left: 40px"> </p>
-                </div>
-                <br>
+                    <br><br>
+
+                    <script defer src="quote.js"></script>
+                    <div id="quote"></div>
+
             </div>
-
-            <br><br>
-
-            <script defer src="quote.js"></script>
-            <div id="quote"></div>
-        </div>
+        -->
 
     </body>
         <script defer src="footer.js"></script>
